@@ -10,5 +10,5 @@ before_install:
   - docker kill $CID
 
 script:
-  - tree ./travis-playground
+  - cat ./travis-playground/Hello.txt
 
