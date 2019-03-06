@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t  vis-playground.
+  - docker build -t travis-playground .
   - CID=`docker run -d -ti --rm travis-playground:latest`
   - docker cp $CID:/opt/travis-playground ./travis-playground
   - docker kill $CID
