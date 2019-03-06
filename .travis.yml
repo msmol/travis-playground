@@ -1,6 +1,6 @@
 language: generic
 
-services
+services:
   - docker
 
 before_install:
