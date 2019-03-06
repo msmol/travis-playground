@@ -11,4 +11,12 @@ before_install:
 
 script:
   - cat ./travis-playground/Hello.txt
-
+  - git config user.email tech.api.team@shutterstock.com
+  - git config user.name shutterbot
+  - git clone https://$GH_USER:$GH_PASS@github.com/msmol/hello-world.git
+  - cp -r ./travis-playground ./hello-world
+  - cd ./hello-world
+  - git add .
+  - git commit -m "Updating things"
+  - git push
+ 
