@@ -15,7 +15,12 @@ script:
   - git config user.name shutterbot
   - git clone https://$GH_USER:$GH_PASS@github.com/msmol/hello-world.git
   - cp -r ./travis-playground/* ./hello-world
+  - cp ./package.json ./hello-world
   - cd ./hello-world
+  - nvm install 10
+  - nvm use 10
+  - yarn add --dev mocha
+  - echo "node_modules" > .gitignore
   - git add .
   - git commit -m "Updating things"
   - git push

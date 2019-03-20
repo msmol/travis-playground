@@ -1,0 +1,8 @@
+{
+  "name": "travis-playground",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:msmol/travis-playground.git",
+  "author": "msmol <msmolash@shutterstock.com>",
+  "license": "MIT"
+}
